@@ -1,0 +1,271 @@
+*,html,body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background-color:black;
+    color: white;
+    padding: 30px 30px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%; 
+    height: 8vh;
+    transition: .4s;
+}
+
+header.secondary{
+    background-color: #fff;
+    color: black;
+    box-shadow: 0px 1px 10px black;
+}
+
+header .brand-title{
+    margin-left: 70px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+header .tab-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;     
+    margin-right: 100px;
+    list-style-type:none;
+   
+}
+
+header .tab-info a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+header.secondary .tab-info a{
+    color: black;
+}
+
+section{
+    padding: 100px;;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.banner .desc{
+    position: relative;
+    z-index: 2;
+} 
+
+.banner .desc .intro{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.banner .desc .intro-name{
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.banner .desc .intro-passion{
+    font-size: 30px;
+    font-weight: 350;
+}
+
+.banner .desc .btn-about{
+    position: relative;
+    display:inline-block;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border: none;
+    font-size: 20px;
+    background-color:rgb(82, 82, 223);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.banner .background{
+    position:absolute;
+    right: -100px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.about-me{
+    height: 100vh;
+}
+
+.about-me .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.about-me .container{
+
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.about-me .container-about h3{
+    font-size: 30px;
+}
+
+.about-me .container-about p{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.about-me .container-img img{
+    width: 55em;
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px 2px #2e2e2e;
+}
+
+.project{
+    min-height: 100vh;
+}
+
+.project .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contact{
+    min-height: auto;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    min-height: auto;
+}
+
+.contact .header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.contact .container-contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px; 
+}
+
+.contact .title-contact{
+    font-size: 1.4em;
+    font-weight: 650;
+}
+
+.contact .container-contact .info-contact .wrapper{
+    padding: 10px;
+}
+
+.contact .container-contact .info-contact .wrapper .list-contact{
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+    font-size: 1.2em;
+}
+
+.contact .container-contact .info-contact .wrapper .list-contact .icon{
+    margin-top: 4px;
+    font-size: 30px;
+}
+
+.contact .container-contact .info-contact .wrapper .list-contact .title-desc{
+    color:rgb(0, 140, 255);
+}
+
+.contact .container-contact .form-contact{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+}
+
+.contact .container-contact .form-contact .input-form{
+    padding: 20px;
+    border-radius: 2px;
+    border: none;
+    background-color: #2e2e2e;
+    color: white;
+    font-weight: 550;
+    font-size: 1.2em;
+    height: 4em;
+}
+
+.contact .container-contact .form-contact .text-form{
+    padding:20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2e2e2e;
+    color: white;
+    font-weight: 550;
+    font-size: 1.2em;
+    height: 18em;
+    letter-spacing: 1px;
+}
+
+
+.contact .container-contact .form-contact .input-btn{
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(82, 82, 223);
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 6em;
+    height: 2.7em;
+    cursor: pointer;   
+}
+
+.copyright{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+
+
